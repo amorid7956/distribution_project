@@ -16,8 +16,8 @@
 ### 8) Создаём суперпользователя:
 `manage.py createsuperuser`
 ### 9) Запускаем воркера для выполнения celery задач(В отдельном окне терминала):
-`celery --app distributionproject worker --loglevel=debug --concurrency=4`
+`celery --app distribution_project worker --loglevel=debug --concurrency=4`
 ### 10) Запускаем отслеживание периодических задач celery(В отдельном окне терминала):
-`celery -A distributionproject beat -l info`
+`celery -A distribution_project beat -l info`
 ### 11) Запускаем отладочный сервер(В отдельном окне терминала):
 `manage.py runserver`
